@@ -1,5 +1,3 @@
-<?php include 'sentMail.php';?>
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +9,7 @@
 </head>
 <body>
   <div class="container">  
-    <form id="contact" action="" method="post">
+    <form id="contact" action="sentMail.php" method="post">
       <h3>Quick Contact</h3>
       <h4>Contact us today, and get reply with in 24 hours!</h4>
  
@@ -31,8 +29,7 @@
         <textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
       </fieldset>
       <div>
-         <p class="success"> <?php echo $success;  ?></p>
-         <p class="failed"> <?php echo $failed;  ?></p>
+         
       </div>
       <fieldset>
         <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
